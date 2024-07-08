@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" data-contexto="fondo"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alura Geek - Practicando Front End: Challenge AluraGeek - Oracle One">
+    <meta name="Kathitacc" content="Katherine Carrasco Chirinos">
+    <title>Kathitacc Geek</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/flex.css" />
+    <script src="./js/mostrarproductos.js" type="module" defer></script>
+    <script src="js/crearProducto.js" type="module" defer></script>
+    <script src="js/borrarProducto.js" type="module" defer></script>
+
+    
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo_img" src="img/header.png" alt="Header Image"/>
+    </header>
+
+    <main class="main">    
+        <div class="app__formulario">
+            <section class="formulario" data-formulario>
+                <h1 class="formulario__titulo">Agregar producto:<br><br></h1>
+                <form class="principal__formulario" data-formulario>
+                    <div class="campos">
+                        <fieldset class="formulario__nombre">
+                            <label class="nombre__etiqueta" for="nombre">Nombre</label>
+                            <input name="nombre" id="nombre" class="nombre__input"type="text" minlength="3" required data-nombre/>
+                            <span class="mensaje-error"></span>
+                        </fieldset> 
+                        <fieldset class="formulario__precio">
+                            <label class="precio__etiqueta" for="precio">Precio</label>
+                            <input name="precio" id="precio" class="precio__input" type="number" minlength="1" data-precio/>
+                            <span class="mensaje-error"></span>
+                        </fieldset> 
+                        <fieldset class="formulario__image">
+                            <label class="image__etiqueta" for="image">Imagen</label>
+                            <input name="image" id="image" class="image__input" type="text" data-image/>
+                            <span class="mensaje-error"></span>
+                        </fieldset> 
+                    </div>
+                    <div class="botones">
+                        <button id="enviar_b" class="enviar__boton" type="submit">
+                            <span>Enviar</span>
+                        </button>
+                        <button id="limpiar__b" class="limpiar__boton" type="reset">
+                            <span>Limpiar</span>
+                        </button>
+                    </div>               
+                </form>   
+            </div>         
+            </section>
+
+        <section class="productos">
+            <h1 class="productos__titulo">Mis productos</h1>
+            <!-- <div class="cards"> -->
+                <!-- <div class="productos__catalogo"> -->
+                    <ul class="producto__card" data-lista> <!-- ***************Agregado data-lista******** -->
+                        <!--<li class="card">
+                                <img class="card__image" src="/img/card.png">
+                                <h3 class="card__nombre">Nombre</h3>
+                                <h3 class="card__precio">Precio</h3>
+                                <button class="eliminar__boton" data-eliminar>Eliminar</button>
+                        </li> -->
+                    </ul>
+                <!-- </div> -->
+               
+            <!-- </div> -->
+        </section>       
+    </main>
+
+    <footer class="footer">
+        <img class="logo_img" src="/img/header.png">
+        <p class="footer__autor">Desarrollado por Kathitacc</p>
+        <p class="footer__date">Alura Latam 2024</p>
+    </footer>   
+       
+</body>
+</html>

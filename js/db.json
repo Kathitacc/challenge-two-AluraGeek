@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "055e",
+      "nombre": "Product 1",
+      "precio": "500",
+      "image": "/img/card.png"
+    },
+    {
+      "id": "055f",
+      "nombre": "Product 2",
+      "precio": "1000",
+      "image": "/img/card.png"
+    },
+    {
+      "id": "054ty",
+      "nombre": "Product 3",
+      "precio": "20500",
+      "image": "/img/card.png"
+    }
+  ]
+}

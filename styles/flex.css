@@ -1,0 +1,140 @@
+.header, .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.logo_img {
+    height: auto;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.productos__titulo {
+    text-align: center;
+    margin: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos__catalogo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.producto__card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+}
+
+.card__image {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .producto__card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        gap: 2px;
+    }
+
+
+    /* .cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+
+    .productos__catalogo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 33.33%;
+        gap: 10px;
+        
+    }
+
+    .producto__card{
+        display: flex;
+        justify-content: space-between;
+       flex-direction: row;
+        flex-wrap: wrap;
+       width: 33.33%;
+        gap: 2px;
+        
+    } */
+    
+
+}

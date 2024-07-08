@@ -1,0 +1,57 @@
+:root {
+    --color-primary: #123456;
+    --color-secondary: #e2d8d8;
+    --bordes: #551480;
+   --fondo-form: rgba(176, 175, 228, 0.8);
+    --bag-botones: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+}
+[data-contexto="fondo"] {
+    --main-bg-color: linear-gradient(180deg, #6906cc 1%, #9124cf 28.44%,#dca9f3 58.44%, #3411d1 100%);
+}
+.app__formulario {
+    border-radius: 65%;
+    border: 0.2rem solid var(--bordes);
+    background: var(--fondo-form);
+    padding: 2.4rem;
+    margin: 8px 5px;
+}
+
+html {
+    background: var(--main-bg-color);
+    min-height: 100vh;
+    font-size: 20px;
+    color: #e9dede;
+    shape-margin:50%;
+    text-shadow: 2px 2px 5px #230242;
+   
+}
+body {
+    min-height: 100vh;
+    background: url("../img/pattern.png" );
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    
+
+}
+
+h1, h2, h3 {
+    font-family: 'Unbounded', cursive;
+}
+ p{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-shadow:0.5px 0px 8px #e9dede;
+ }
+  .enviar__boton, .limpiar__boton {
+    padding: 8px;
+    width: 50%;
+    color: var(--color-secondary);
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 20px;
+    background: var(--bag-botones);
+    margin-top: 5%;
+    font-size: 14px;
+    gap: 1rem;
+}
+
